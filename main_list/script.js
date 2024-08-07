@@ -10,11 +10,11 @@ function updateTaskCounter() {
 function addTask() {
     const deadline = document.getElementById("dead_line").value;
     if (inputBox.value === '' || deadline === '') {
-        alert(inputBox.value === '' ? "Напиши что-нибудь гандон!" : "создай дедлайн хуила в строке \"дд.мм.гггг\"!");
+        alert(inputBox.value === '' ? "Напишите что-нибудь!" : "создайте дедлайн \"дд.мм.гггг\"!");
     } else {
         const task = { text: inputBox.value, deadline };
         const li = document.createElement("li");
-        li.innerHTML = `${task.text} Date: ${task.deadline}`;
+        li.innerHTML = `${task.text} Deadline: ${task.deadline}`;
         listContainer.appendChild(li).appendChild(document.createElement("span")).innerHTML = "\u00d7";
         updateTaskCounter(); 
         saveData();
