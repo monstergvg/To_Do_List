@@ -1,0 +1,181 @@
+::-webkit-scrollbar {
+  width: 12px; 
+  background-color: rgb(84, 60, 129)
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(58, 40, 100);
+  border-radius: 9em;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.akeconsa-udaneles {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9;
+  background-size: cover;
+  background-position: center;
+  background-image: url(img/scroll_up.png);
+}
+.akeconsa-udaneles a {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  opacity: 0;
+  display: block;
+}
+.akeconsa-udaneles a span {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  line-height: 42px;
+  cursor: pointer;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+.title {
+  background-color: rgb(80, 80, 80);
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.title_text {
+  color: white;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #4e085f);
+  padding: 10px;
+}
+.TO-DO_app {
+  margin-top: 50px;
+  width: 100%;
+  min-height: 100vh;
+  max-width: 540px;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid rgb(199, 199, 199);
+  border-radius: 10px;
+}
+.TO-DO_app form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.fild_form {
+  margin-top: 5vh;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  border: 2px solid rgb(255, 255, 255)
+}
+.add_goal {
+  background-color: rgb(160, 160, 160);
+  width: 70px;
+  height: 30px;
+  border: 1px solid rgb(202, 202, 202);
+  border-radius: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .add_goal:hover {
+    background-color: rgb(104, 104, 104);
+  }
+}
+@media (hover: none) {
+  .add_goal:active {
+    background-color: rgb(104, 104, 104);
+  }
+}
+.add_goal:active {
+  background-color: green;
+}
+.goal_form {
+  border: 1px solid rgb(143, 143, 143);
+  padding: 10px;
+  border-radius: 23px; 
+}
+ul li {
+  list-style: none;
+  font-size: 20px;
+  padding: 12px 40px 12px 50px;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(img/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  left: 8px;
+  top: 12px;
+}
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  background-image: url(img/checked.png);
+}
+ul li span {
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+ul li span:hover {
+  background-color: #edeef0;
+}
+.dl_date {
+  padding: 5px;
+  border-radius: 25px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+.icon_todo {
+  left: 100px;
+  right: 100px;
+  top: 83px;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dl_form {
+  display: flex;
+}
+.dl_img {
+  width: 50px;
+  height: 50px;
+}

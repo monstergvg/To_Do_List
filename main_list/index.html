@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO List</title>
+</head>
+<body>
+    <div class="akeconsa-udaneles">        
+        <a href="#" title="Поднять страницы на сайтах вверх"><span class="fas fa-angle-up"></span></a>
+    </div>
+    <header>
+        <div class="title">
+            <h1 style="color: white;">TO-DO List</h1>
+            <p id="taskCounter" style="color: white;">0 tasks</p>
+        </div>
+    </header>
+    <div class="container">
+        <div class="TO-DO_app">
+            <img src="img/icon.png" class="icon_todo">
+            <form action="#" method="get" class="fild_form">
+                <input type="text" id="input_box" placeholder="Task" class="goal_form">
+                <button onclick="addTask()" class="add_goal">Add»</button>
+            </form>
+            <form action="#" method="get" class="dl_form">
+                <img src="img/deadline.png" class="dl_img">
+                <input type="date" id="dead_line" class="dl_date">
+            </form>
+            <ul id="list_container">
+            </ul> 
+        </div>   
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
